@@ -31,6 +31,12 @@ curl_close($curl);
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@d0ne1s" />
+  <meta property="og:url" content="https://qiigle.com" />
+  <meta property="og:title" content="Qiigle - qiita記事検索サービス" />
+  <meta property="og:description" content="Qiitaの記事を検索するサービスです。ユーザー名、タイトル、本文、タグの複数条件で検索することができます。" />
+  <meta property="og:image" content="https://qiigle.com/ogp.png" />
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <title>検索結果 | Qiigle - qiita記事検索サービス</title>
