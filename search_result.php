@@ -11,6 +11,7 @@ if($_GET['body']) {
 if($_GET['tag']) {
   $q_tag = urlencode("tag:{$_GET['tag']} ");
 }
+$config = require('config.php');
 $base_url = "https://qiita.com/api/v2/items";
 $url = "{$base_url}?page=1&per_page=100&query={$q_user}{$q_title}{$q_body}{$q_tag}";
 $curl = curl_init();
@@ -19,7 +20,7 @@ $option = [
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_SSL_VERIFYPEER => false,
   CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_HTTPHEADER =>  ['Authorization: Bearer eee6b4596cd45c491b3e16d32a64a32e86f3178d'],
+  CURLOPT_HTTPHEADER =>  ["Authorization: Bearer {$config['QIITA_TOKEN']}"],
 ];
 curl_setopt_array($curl, $option);
 $response = curl_exec($curl);
