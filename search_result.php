@@ -21,10 +21,26 @@ $option = [
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_SSL_VERIFYPEER => false,
   CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_HTTPHEADER =>  ['Authorization: Bearer eee6b4596cd45c491b3e16d32a64a32e86f3178d'],
 ];
 curl_setopt_array($curl, $option);
 $response = curl_exec($curl);
-$result = json_decode($response, true);
+$articles = json_decode($response, true);
 curl_close($curl);
-print $result[0]['title']
 ?>
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<body>
+  <?php foreach($articles as $a){ ?>
+    <div style='border: solid 1px #ddd; padding: 8px; margin-bottom: 8px'>
+      <p><?= $a['title']; ?></p>
+      <p><a href='<?= $a['url']; ?>'><?= $a['url']; ?></a></p>
+    </div>
+  <?php } ?>
+</body>
+</html>
