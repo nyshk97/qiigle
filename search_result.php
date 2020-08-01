@@ -12,7 +12,7 @@ if($_GET['tag']) {
   $q_tag = urlencode("tag:{$_GET['tag']} ");
 }
 $base_url = "https://qiita.com/api/v2/items";
-$url = "{$base_url}?per_page=100&query={$q_user}{$q_title}{$q_body}{$q_tag}";
+$url = "{$base_url}?page=1&per_page=100&query={$q_user}{$q_title}{$q_body}{$q_tag}";
 $curl = curl_init();
 $option = [
   CURLOPT_URL => $url,
@@ -78,7 +78,7 @@ curl_close($curl);
           <span class='green text-6xl'>g</span>
           <span class='black text-6xl'>l</span>
           <span class='blue text-6xl'>e</span>
-          <span class='text-xs text-gray-800'>by <a href='https://twitter.com/d0ne1s' class='text-gray-600 text-sm'>d0ne1s</a></span>
+          <span class='text-xs text-gray-800'>by <a href='https://twitter.com/d0ne1s' class='text-gray-600 text-sm' target='_blank'>d0ne1s</a></span>
         </h1>
       </a>
     </div>
