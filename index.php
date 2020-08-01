@@ -1,13 +1,10 @@
-<?php
-$name = 'namatame';
-?>
 <!DOCTYPE html>
 <html lang='ja'>
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <title>Qiigle | qiita記事検索サービス</title>
+  <title>Qiigle - qiita記事検索サービス</title>
 </head>
 <body>
   <style>
@@ -29,15 +26,17 @@ $name = 'namatame';
   </style>
   <div class='max-w-3xl mx-auto px-4'>
     <div class='text-center mb-4'>
-      <h1>
-        <span class='green text-6xl'>Q</span>
-        <span class='blue text-6xl'>i</span>
-        <span class='pink text-6xl'>i</span>
-        <span class='green text-6xl'>g</span>
-        <span class='black text-6xl'>l</span>
-        <span class='blue text-6xl'>e</span>
-        <span class='text-xs text-gray-800'>by <a href='https://twitter.com/d0ne1s' class='text-gray-600'>d0ne1s</a></span>
-      </h1>
+      <a href='/'>
+        <h1>
+          <span class='green text-6xl'>Q</span>
+          <span class='blue text-6xl'>i</span>
+          <span class='pink text-6xl'>i</span>
+          <span class='green text-6xl'>g</span>
+          <span class='black text-6xl'>l</span>
+          <span class='blue text-6xl'>e</span>
+          <span class='text-xs text-gray-800'>by <a href='https://twitter.com/d0ne1s' class='text-gray-600 text-sm'>d0ne1s</a></span>
+        </h1>
+      </a>
     </div>
     <div class='mb-6'>
       <p class='text-sm text-center text-gray-800'>Qiitaの記事を検索します</p>
