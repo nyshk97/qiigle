@@ -15,4 +15,7 @@ https://qiigle.com/
 ユーザー名 + 記事の内容で簡単に記事を検索する方法がありそうでなかった(どの方法もちょっと面倒だった)ので作ってみました。
 
 ## 利用技術
-- レンタル
+- ConohaWing
+- PHP
+- Tailwind CSS(CDN)
+- HTML
