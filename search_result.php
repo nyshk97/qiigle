@@ -32,6 +32,7 @@ curl_close($curl);
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <title>検索結果 | Qiigle - qiita記事検索サービス</title>
 </head>
 <body>
