@@ -37,6 +37,15 @@ curl_close($curl);
   <meta property="og:title" content="Qiigle - qiita記事検索サービス" />
   <meta property="og:description" content="Qiitaの記事を検索するサービスです。ユーザー名、タイトル、本文、タグの複数条件で検索することができます。" />
   <meta property="og:image" content="https://qiigle.com/ogp.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123762216-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123762216-3');
+  </script>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <title>検索結果 | Qiigle - qiita記事検索サービス</title>
