@@ -57,7 +57,7 @@
       </a>
     </div>
     <div class='mb-6'>
-      <p class='text-sm text-center text-gray-800'>Qiitaの記事を<a href='https://qiita.com/d0ne1s/items/ea9d0154d56c7cfd2128#%E4%BD%95%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8B%E4%BB%95%E6%A7%98' class='text-gray-600' target='_blank'>検索</a>します。</p>
+      <p class='text-sm text-center text-gray-800'>Qiitaの記事を<a href='https://qiita.com/d0ne1s/items/ea9d0154d56c7cfd2128#%E4%BD%95%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8B%E4%BB%95%E6%A7%98' class='text-gray-600' target='_blank'>検索</a>します</p>
     </div>
     <form action='search_result.php'>
       <div class="bg-white rounded-lg">
