@@ -11,6 +11,9 @@ if($_GET['body']) {
 if($_GET['tag']) {
   $q_tag = urlencode("tag:{$_GET['tag']} ");
 }
+function esc($s){
+  return htmlspecialchars($s, ENT_QUOTES, 'utf-8');
+}
 $config = require('config.php');
 $base_url = "https://qiita.com/api/v2/items";
 $url = "{$base_url}?page=1&per_page=100&query={$q_user}{$q_title}{$q_body}{$q_tag}";
@@ -88,16 +91,16 @@ curl_close($curl);
     <div>
       <p>
         <span class='mr-1'>検索結果</span>
-        <span class='text-gray-800 text-xs'>(ユーザー名: <?= $_GET['user'] ?>, タイトル: <?= $_GET['title'] ?>, 本文: <?= $_GET['body'] ?>, タグ: <?= $_GET['tag'] ?>)
+        <span class='text-gray-800 text-xs'>(ユーザー名: <?= esc($_GET['user']); ?>, タイトル: <?= esc($_GET['title']); ?>, 本文: <?= esc($_GET['body']); ?>, タグ: <?= esc($_GET['tag']); ?>)
 </span>
       </p>
     </div>
     <div>
       <?php foreach($articles as $a){ ?>
         <div class='py-4'>
-          <a href='https://qiita.com/<?= $a['user']['id']; ?>' class='block text-xs' target='_blank'><?= $a['user']['name']; ?> (@<?= $a['user']['id']; ?>)</a>
-          <a href='<?= $a['url']; ?>' class='block hover:underline' target='_blank'>
-            <h3 class='text-lg' style='color: #1a0dab;'><?= $a['title']; ?></h3>
+          <a href='https://qiita.com/<?= esc($a['user']['id']); ?>' class='block text-xs' target='_blank'><?= esc($a['user']['name']); ?> (@<?= esc($a['user']['id']); ?>)</a>
+          <a href='<?= esc($a['url']); ?>' class='block hover:underline' target='_blank'>
+            <h3 class='text-lg' style='color: #1a0dab;'><?= esc($a['title']); ?></h3>
             <p class='break-all text-xs text-gray-800'><?= substr($a['body'], 0, 200); ?></p>
           </a>
         </div>
