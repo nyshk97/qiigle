@@ -79,7 +79,7 @@ curl_close($curl);
           <span class='blue text-6xl'>i</span>
           <span class='pink text-6xl'>i</span>
           <span class='green text-6xl'>g</span>
-          <span class='black text-6xl'>l</span>
+          <span class='light-green text-6xl'>l</span>
           <span class='blue text-6xl'>e</span>
           <span class='text-xs text-gray-800'>by <a href='https://twitter.com/d0ne1s' class='text-gray-600 text-sm' target='_blank'>d0ne1s</a></span>
         </h1>
