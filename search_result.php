@@ -98,7 +98,10 @@ curl_close($curl);
     <div>
       <?php foreach($articles as $a){ ?>
         <div class='py-4'>
-          <a href='https://qiita.com/<?= esc($a['user']['id']); ?>' class='block text-xs' target='_blank'><?= esc($a['user']['name']); ?> (@<?= esc($a['user']['id']); ?>)</a>
+          <a href='https://qiita.com/<?= esc($a['user']['id']); ?>' class='block text-xs' target='_blank'>
+            <span class='font-bold text-gray-600'>LGTM <?= esc($a['likes_count']); ?></span>
+            <?= esc($a['user']['name']); ?> (@<?= esc($a['user']['id']); ?>)
+          </a>
           <a href='<?= esc($a['url']); ?>' class='block hover:underline' target='_blank'>
             <h3 class='text-lg' style='color: #1a0dab;'><?= esc($a['title']); ?></h3>
             <p class='break-all text-xs text-gray-800'><?= substr(esc($a['body']), 0, 200); ?></p>
