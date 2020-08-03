@@ -1,3 +1,6 @@
+<?php
+$user = $_COOKIE['user'];
+?>
 <!DOCTYPE html>
 <html lang='ja'>
 <head>
@@ -69,7 +72,7 @@
               </p>
             </div>
             <p>
-              <input id="user" name='user' autocomplete="false" tabindex="0" type="text" placeholder='d0ne1s' class="py-1 px-1 text-gray-900 outline-none block h-full w-full">
+              <input id="user" name='user' autocomplete="false" tabindex="0" type="text" placeholder='d0ne1s' class="py-1 px-1 text-gray-900 outline-none block h-full w-full" value='<?= $user; ?>'>
             </p>
           </div>
           <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -103,7 +106,11 @@
             </p>
           </div>
         </div>
-        <div class="mt-3 pt-3 text-center">
+        <div class='text-center mt-3'>
+          <input type='checkbox' name='remember_user' id='remember_user' class='form-checkbox'>
+          <label for='remember_user' class='text-xs text-gray-800 align-text-top'>ユーザー名を記憶する</label>
+        </div>
+        <div class="mt-3 text-center">
           <button class="rounded text-gray-100 px-8 py-2 hover:shadow-inner hover:bg-blue-700 transition-all duration-300 hover:opacity-75" style='background: #54c000'>
             検索
           </button>
