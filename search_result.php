@@ -103,7 +103,9 @@ curl_close($curl);
         <div class='py-4'>
           <a href='https://qiita.com/<?= esc($a['user']['id']); ?>' class='block text-xs' target='_blank'>
             <span class='font-bold text-gray-600'>LGTM <?= esc($a['likes_count']); ?></span>
-            <?= esc($a['user']['name']); ?> (@<?= esc($a['user']['id']); ?>)
+            <span><?= esc($a['user']['name']); ?> (@<?= esc($a['user']['id']); ?>)</span>
+            <span>投稿:<?= esc(date('Y/m/d', strtotime($a['created_at']))); ?></span>
+            <span>更新:<?= esc(date('Y/m/d', strtotime($a['updated_at']))); ?></span>
           </a>
           <a href='<?= esc($a['url']); ?>' class='block hover:underline' target='_blank'>
             <h3 class='text-lg' style='color: #1a0dab;'><?= esc($a['title']); ?></h3>
