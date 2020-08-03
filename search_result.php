@@ -12,7 +12,7 @@ if($_GET['tag']) {
   $q_tag = urlencode("tag:{$_GET['tag']} ");
 }
 if($_GET['remember_user']){
-  setcookie('user', $_GET['user'], time()+60*60*24*360);
+  setcookie('qiigle_user', $_GET['user'], time()+60*60*24*360);
 }
 function esc($s){
   return htmlspecialchars($s, ENT_QUOTES, 'utf-8');

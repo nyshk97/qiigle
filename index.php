@@ -1,5 +1,5 @@
 <?php
-$user = $_COOKIE['user'];
+$user = $_COOKIE['qiigle_user'];
 ?>
 <!DOCTYPE html>
 <html lang='ja'>
