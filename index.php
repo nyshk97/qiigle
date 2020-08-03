@@ -1,5 +1,8 @@
 <?php
-$user = $_COOKIE['qiigle_user'];
+$user = '';
+if(isset($_COOKIE['qiigle_user'])){
+  $user = $_COOKIE['qiigle_user'];
+}
 ?>
 <!DOCTYPE html>
 <html lang='ja'>
