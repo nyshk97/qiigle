@@ -27,4 +27,4 @@ https://qiigle.com/
 
 ## 関連記事
 
-[【Qiigle】という Qiita の記事を検索するサービスを作りました - Qiita](https://qiita.com/d0ne1s/items/ea9d0154d56c7cfd2128)a
+[【Qiigle】という Qiita の記事を検索するサービスを作りました - Qiita](https://qiita.com/d0ne1s/items/ea9d0154d56c7cfd2128)
